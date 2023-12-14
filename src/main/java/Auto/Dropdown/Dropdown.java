@@ -11,9 +11,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.GeckoDriverService;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.testng.Assert;
+//import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.asserts.Assertion;
+//import org.testng.asserts.Assertion;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -60,11 +60,11 @@ public class Dropdown
 		    	
 		    	if(isFound == true) {
 		    		System.out.println(i.getText()+" "+ isFound);
-		    		Assert.assertEquals(true, isFound);
+                //    Assert.assertTrue(isFound);
 		    	}
 		    	else {
 		    		System.out.println("No matching records found.  "+isFound );
-		    		Assert.assertEquals(false, isFound);
+                 //   Assert.assertFalse(isFound);
 		    	}
 		    		
 		    
